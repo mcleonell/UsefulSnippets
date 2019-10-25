@@ -1,7 +1,7 @@
 # Bindable behavior
 ## EventToCommandBehavior
 used to bind commands to views without command attributes.
-#### Usage
+### How to use
 Let's say this Viewmodel contains a command that requires an object "ExampleParam" as parameter, the ObservableCollection is there to supply items to a list view.
 ```c#
 // ExampleViewmodel.cs
