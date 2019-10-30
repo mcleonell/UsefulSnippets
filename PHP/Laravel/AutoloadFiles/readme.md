@@ -28,6 +28,7 @@ First you need to alter the composer.json file, find the autoload section and (i
             "files": [
                 "app/example.php"
             ]
+    }
     ...
 }
 ```
