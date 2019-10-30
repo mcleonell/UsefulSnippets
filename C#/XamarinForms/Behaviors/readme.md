@@ -97,4 +97,4 @@ The EventToCommandBehavior has an EventArgsConverter attribute, we can assign ou
     </Listview>
 </ContentPage>
 ```
-Happy Coding!
+#### Enjoy!
