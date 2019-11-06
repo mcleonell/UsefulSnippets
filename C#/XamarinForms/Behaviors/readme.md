@@ -6,8 +6,8 @@ Let's say this Viewmodel contains a command that requires an object "ExamplePara
 ```c#
 // ExampleViewmodel.cs
 
-public ICommand ExampleCommand => NewCommand<ExampleParam>(
-    (ItemTappedEventArgs) => { 
+public ICommand ExampleCommand => new Command<ExampleParam>(
+    (args) => { 
         DoSomething();
 });
 
