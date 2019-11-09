@@ -92,7 +92,7 @@ The EventToCommandBehavior has an EventArgsConverter attribute, we can assign ou
 
     <ListView   ItemsSource="{Binding ExampleParams}">
         <ListView.Behaviors>
-            <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ExampleCommand}" CommandParameter="." EventArgsConverter="StaticResource ItemTappedEventArgsConverter">
+            <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding ExampleCommand}" CommandParameter="." EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}">
         </ListView.Behaviors>
     </Listview>
 </ContentPage>
