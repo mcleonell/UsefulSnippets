@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Property with RaisePropertyChanged</Title>
+            <Shortcut>propraise</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[
+                    private $Type$ $PrivateProp$;
+
+                    public $Type$ $PublicProp$
+                    {
+                        get { return $PrivateProp$; }
+                        set 
+                        {
+                            $PrivateProp$ = value;
+                            RaisePropertyChanged(nameof($PublicProp$));
+                        }
+                    }
+                ]]>
+            </Code>
+
+            <Declarations>
+                <Litiral>
+                    <Id>Type</Id>
+                    <ToolTip>Property type.</ToolTip>
+                    <Default>string</Default>
+                </Litiral>
+                <Litiral>
+                    <Id>PrivateProp</Id>
+                    <ToolTip>Private property name.</ToolTip>
+                    <Default>privateProp</Default>
+                </Litiral>
+                <Litiral>
+                    <Id>PublicProp</Id>
+                    <ToolTip>Public property name.</ToolTip>
+                    <Default>PublicProp</Default>
+                </Litiral>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
